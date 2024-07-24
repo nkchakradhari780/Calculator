@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container{
+    height: 90vh;
+    background-color: rgb(0, 0, 0);;
+}
+.innercontainer1{
+    /* background-color: brown; */
+    height: 35vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25px;
+    border: 5px solid rgb(74, 73, 74);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.inputcontainer{
+    height: 13vh;
+    /* background-color: bisque; */
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    /* justify-items: center; */
+    justify-content: center;
+    width: 95%;
+}
+#outputcontainer{
+   /* background-color: aqua;  */ 
+}
+.cancle{
+    height: 7vh;
+    background-color: aqua;
+    
+}
+.innercontainer2{
+    margin-top: 7.5%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+    /* background-color: blueviolet; */
+}
+.button{
+    background-color: white;
+    height: 10vh;
+    border-radius: 100%;
+    background-color: rgb(28, 27, 27);
+    color: azure;
+    border: none;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.operators{
+    color: rgb(0, 255, 0);
+    background-color: rgb(47, 44, 44);
+}
+.equal{
+    background-color: green;
+    color: whitesmoke;
+}
+#allclear{
+    color: red;
+}
+.canclebtn{
+    height: 50px;
+    width: 75px;
+    margin-top: 7px;
+    margin-left: 75%;
+    border: none;
+    background: none;
+    color: red;
+    font-size: 25px;
+
+}
+.input{
+    color: antiquewhite;
+    font-size: 7rem;
+    /* background-color: aquamarine; */
+    width: 80vw;
+    /* position: absolute; */
+    border: none;
+    text-align: right;
+}
+#output{
+    font-size: 5rem;
+}
+
+@media screen and (min-width: 450px){
+    .button{
+        border-radius: 0;
+    }
+    .button:hover{
+        background-color: rgb(46, 48, 48);
+    }
+    .equal:hover{
+        background-color: rgb(7, 165, 49);
+    }
+    
+}
+@media screen and (max-height: 850px){
+
+    .container{
+        height: 250px;
+    }
+    .innercontainer2{
+        height: 600px;
+    }
+    .button{
+        height: 100px;
+        /* font-size: 90%; */
+    }
+    .innercontainer1{
+        height: 250px;
+    }
+    .inputcontainer{
+        height: 100px;
+        padding-top: 5px;
+    }
+    
+
+}
+@media screen and (min-width: 750px){
+    .innercontainer2{
+        margin-top: 15px;
+    }
+    
+}

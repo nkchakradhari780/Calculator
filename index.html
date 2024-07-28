@@ -9,39 +9,30 @@
 <body>
     <div class="container">
         <div class="innercontainer1">
-            <div class="inputcontainer">
-                <input type="text" placeholder="0" class="input">
-            </div>
-            <div class="inputcontainer" id="outputcontainer">
-                <input type="text" class="input" placeholder="0" id="output">
-            </div>
+            <input type="text" class="input" id="inputbox">
+            <input type="text" class="input"  id="outputbox">
         </div>
-        <!-- <hr> -->
         <div class="innercontainer2">
-            <button class="button operators" id="allclear">C</button>
-            <button class="button operators" id="delete">D</button>
-            <button class="button operators">%</button>
-            <button class="button operators">÷</button>
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button operators">×</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button operators">-</button>
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button operators">+</button>
-            <button class="button">+/-</button>
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button equal">=</button>
-            <!-- <button class="button">123</button>
-            <button class="button">123</button>
-            <button class="button">123</button>
-            <button class="button">123</button> -->
+            <button onclick="allClear()" class="operators" id="allclear">C</button>
+            <button onclick="deletebtn(),calculate()" class="operators" id="delete">D</button>
+            <button onclick="appendToDisplay('%')" class="operators">%</button>
+            <button onclick="appendToDisplay('÷')" class="operators">÷</button>
+            <button onclick="appendToDisplay('1') ,calculate()">1</button>
+            <button onclick="appendToDisplay('2') ,calculate()">2</button>
+            <button onclick="appendToDisplay('3') ,calculate()">3</button>
+            <button onclick="appendToDisplay('×')" class="operators">×</button>
+            <button onclick="appendToDisplay('4') ,calculate()">4</button>
+            <button onclick="appendToDisplay('5') ,calculate()">5</button>
+            <button onclick="appendToDisplay('6') ,calculate()">6</button>
+            <button onclick="appendToDisplay('-')" class="operators">-</button>
+            <button onclick="appendToDisplay('7') ,calculate()">7</button>
+            <button onclick="appendToDisplay('8') ,calculate()">8</button>
+            <button onclick="appendToDisplay('9') ,calculate()">9</button>
+            <button onclick="appendToDisplay('+')" class="operators">+</button>
+            <button onclick="toggleSign()">+/-</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="equal">=</button>
         </div>
     </div>
 </body>
